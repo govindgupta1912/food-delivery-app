@@ -45,7 +45,7 @@ const ResturantCard =( props)=>{
           <h3>{avgRating }stars</h3>
           <h3>{costForTwo} FOR TWO</h3>
           { <h3>{sla?.lastMileTravelString}minutes</h3> }
-          <h3>user:{loggedInUser}</h3>
+          {/* <h3>user:{loggedInUser}</h3> */}
           
         </div>
     )
