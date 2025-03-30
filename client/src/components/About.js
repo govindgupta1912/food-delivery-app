@@ -55,8 +55,8 @@ const About = () => {
   const [show, setShow] = useState(false);
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white">
-      <div className="mb-8">
-        {/* Toggle button for showing and hiding profile */}
+      {/* <div className="mb-8">
+
         {show ? (
           <>
             <Link to="/about">
@@ -70,7 +70,7 @@ const About = () => {
             <Outlet />
           </>
         ) : (
-          <Link to="profile">
+          <Link to="/about">
             <button
               className="px-6 py-2 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition-all"
               onClick={() => setShow(true)}
@@ -79,7 +79,7 @@ const About = () => {
             </button>
           </Link>
         )}
-      </div>
+      </div> */ }
 
       <div className="flex flex-col md:flex-row items-center max-w-7xl w-full p-4">
         <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">

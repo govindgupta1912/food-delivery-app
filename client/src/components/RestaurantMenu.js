@@ -11,18 +11,7 @@ const RestaurantMenu = () => {
 
   const [showTndex, setShowIndex] = useState(null);
 
-  // useEffect(()=>{
-  //     fectchMenu();
-  // },[]);
-
-  // const fectchMenu= async()=>{
-  //     const data=await fetch(MENU_API+resId);
-  //     console.log(MENU_API+resId);
-
-  //     const json=await data.json();
-  //     console.log(json);
-  //     setResInfo(json.data);
-  // };
+ 
   const resInfo = useCustomResturant(resId);
   if (resInfo === null) return <Shimmer />;
   console.log(resInfo);
@@ -36,20 +25,7 @@ const RestaurantMenu = () => {
     (c) => c.card?.card?.["@type"] == "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
   );
   console.log(categories);
-  // return(
-  //     <div className="menu">
-  //         <h1>{name}</h1>
-  //         <p>{cuisines.join(",")}-{costForTwoMessage}</p>
-  //         <h2>Menu</h2>
-  //           <ul>
-  //             {itemCards.map((item)=>(
-  //                 <li key={item.card.info.id}>{item.card.info.name}-{" RS. "+item.card.info.price/100}</li>
-  //             ))}
-  //           </ul>
-  //          {/* <li>{itemCards[0].card.info.name}</li>
-  //         <li>{itemCards[1].card.info.name}</li> * */}
-  //     </div>
-  // )
+
 
   return (
     <div className="menu text-center">
